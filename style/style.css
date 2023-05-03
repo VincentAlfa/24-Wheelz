@@ -16,6 +16,8 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: rgb(214, 214, 214) solid 2px;
+    position: fixed;
+    background-color: #ffff;
 }
 
 .navbar-logo img{
