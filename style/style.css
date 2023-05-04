@@ -80,7 +80,7 @@
     height: 290px;
     width: 464px;
     display: flex;
-    overflow: scroll;
+    overflow: hidden;
     scroll-snap-type: x mandatory;
 }
 
