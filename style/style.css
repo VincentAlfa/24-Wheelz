@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
   margin: 0;
@@ -23,6 +25,7 @@
   position: fixed;
   background-color: #ffff;
   z-index: 999;
+  font-family: "Poppins", sans-serif;
 }
 
 .navbar-logo {
@@ -55,7 +58,7 @@
 }
 
 .navbar-text a:hover {
-  font-weight: 600;
+  font-weight: 900;
 }
 .navbar-text a:after {
   content: "";
@@ -111,38 +114,69 @@
   border-radius: 0.8rem;
 }
 
-.main-content{
+.main-content {
   min-height: 45rem;
   max-width: 100%;
   position: relative;
-  
+  font-family: "Montserrat", sans-serif;
 }
 
-.main-content .about-section{
+.main-content .about-section {
   display: flex;
-  justify-content: center;
-  padding-top: 2px;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
 }
 
-.main-content .about-section .heading{
+.main-content .about-section .heading {
   font-weight: 500;
   color: #000000;
 }
 
-.main-content .about-section .heading span:nth-child(1){
+.main-content .about-section .heading span:nth-child(1) {
   color: #58b7f1;
   font-weight: 700;
 }
-.main-content .about-section .heading span:nth-child(2){
+.main-content .about-section .heading span:nth-child(2) {
   font-weight: 700;
 }
-.main-content .about-section .heading span:nth-child(3){
+.main-content .about-section .heading span:nth-child(3) {
   font-size: 80%;
-
 }
 
+.main-content .about-section .line-1 {
+  position: relative;
+  margin: auto;
+  width: 790px;
+  height: 4px;
+  background-color: #58b7f1;
+  margin-top: 10px;
+}
 
+.main-content .about-section .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 15rem;
+  font-size: 18px;
+  width: 100%;
+  margin-top: 2rem;
+}
 
+.main-content .about-section button {
+  color: #58b7f1;
+  background-color: #ffffff;
+  border: 2px solid #58b7f1;
+  border-radius: 20px;
+  margin-top: 1rem;
+  width: 132px;
+  height: 27px;
+}
+
+.main-content .about-section button:hover {
+  cursor: pointer;
+}
 
 .footer {
   display: flex;
