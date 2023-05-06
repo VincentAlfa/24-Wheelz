@@ -21,6 +21,7 @@
   border-bottom: rgb(214, 214, 214) solid 2px;
   position: fixed;
   background-color: #ffff;
+  z-index: 999;
 }
 
 .navbar-logo {
