@@ -16,8 +16,6 @@ body {
   width: 100%;
   min-height: 100vh;
   position: relative;
-  background-image: url("src/images/bg.svg");
-  background-size: cover;
 }
 
 .navbar {
@@ -124,7 +122,7 @@ body {
   min-height: 45rem;
   max-width: 100%;
   position: relative;
-  background-image: url("../src/images/bg.svg");
+  background-image: url("/style/background/bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
