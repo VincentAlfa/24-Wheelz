@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 .container-landing-page {
   width: 100%;
   height: 100vh;
@@ -79,6 +83,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 12px;
   width: 100%;
   height: 46px;
   color: #fff;

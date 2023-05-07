@@ -1,3 +1,3 @@
-function about(){
-    window.location.href="./about.html"
+const redirectToPage = (link) =>{
+    window.location.href=link
 }
