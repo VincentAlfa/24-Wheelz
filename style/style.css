@@ -32,6 +32,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.navbar.scroll{
+  height: 7vh;
+  transition: all 0.2s ease-in-out;
+}
+
 .navbar-logo {
   font-family: "Monoton", cursive;
   font-size: 40px;
