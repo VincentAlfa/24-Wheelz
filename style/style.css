@@ -190,6 +190,8 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 5rem;
+  justify-content: center;
+  padding-bottom: 5rem;
 }
 
 .main-content .catalog-section h2 {
@@ -211,6 +213,12 @@ body {
   margin-top: 1rem;
 }
 
+.main-content .catalog-section .cards {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
 .main-content .catalog-section .cards .card {
   width: 201px;
   height: 286px;
@@ -219,8 +227,26 @@ body {
     #ffffff -21.19%,
     rgba(208, 208, 208, 0) 111.31%
   );
-  filter: drop-shadow(1px 5px 5px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(1px 10px 5px rgba(0, 0, 0, 0.25));
   border-radius: 13px;
+}
+
+.main-content .catalog-section button {
+  color: #58b7f1;
+  background-color: #ffffff;
+  border: 2px solid #58b7f1;
+  border-radius: 20px;
+  margin-top: 1rem;
+  width: 180px;
+  height: 35px;
+  transition: all 0.2s ease;
+  margin-top: 2rem;
+}
+
+.main-content .catalog-section button:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #58b7f1;
 }
 
 .footer {
