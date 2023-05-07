@@ -122,6 +122,11 @@ body {
   min-height: 45rem;
   max-width: 100%;
   position: relative;
+  background-image: url(./background/blob-1.svg);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 3.5rem;
+  background-size: 360px;
 }
 
 .main-content .about-section {
