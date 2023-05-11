@@ -18,7 +18,7 @@
           <a href="about.html">TENTANG KAMI</a>
           <a href="katalog.html">KATALOG</a>
           <a href="wisata.html">DESTINASI WISATA</a>
-          <a href="contact.html">HUBUNGI KAMI</a>
+          <button class="order" onclick="redirectToPage('orderform.html')">Order</button>
         </div>
       </nav>
       <!-- NavBar -->
@@ -61,7 +61,7 @@
           <div class="cards">
             <div class="card">
               <img src="src/Images/car1.svg" alt="car1">
-              <p>Avanza</p>
+              <p class="nama">Avanza</p>
               <div class="fitur">
                 <img src="src/icon/driver.svg" alt="driver">
                 <p class="driverIcon">Driver</p>
@@ -70,7 +70,8 @@
                 <img src="src/icon/passanger.svg" alt="passanger">
                 <p class="passanger">7 Penumpang</p>
               </div>
-              <div class="harga">Rp. 300.000 / Hari</div>
+              <p class="harga">Rp. 300.000 / Hari</p>
+              <div class="line-price"></div>
             </div>
             <div class="card">
               <img src="src/Images/car2.svg" alt="car2">
@@ -83,7 +84,8 @@
                 <img src="src/icon/passanger.svg" alt="passanger">
                 <p class="passanger">1 Penumpang</p>
               </div>
-              <div class="harga">Rp. 15.000.000 / Hari</div>
+              <p class="harga">Rp. 15.000.000 / Hari</p>
+              <div class="line-price"></div>
             </div>
             <div class="card">
               <img src="src/Images/motor1.svg" alt="motor1">
@@ -96,7 +98,8 @@
                 <img src="src/icon/passanger.svg" alt="passanger">
                 <p class="passanger">1 Penumpang</p>
               </div>
-              <div class="harga">Rp. 250.000 / Hari</div>
+              <p class="harga">Rp. 250.000 / Hari</p>
+              <div class="line-price"></div>
             </div>
             <div class="card">
               <img src="src/Images/motor2.svg" alt="motor2">
@@ -109,7 +112,8 @@
                 <img src="src/icon/passanger.svg" alt="passanger">
                 <p class="passanger">1 Penumpang</p>
               </div>
-              <div class="harga">Rp. 250.000 / Hari</div>
+              <p class="harga">Rp. 250.000 / Hari</p>
+              <div class="line-price"></div>
             </div>
           </div>
           <button onclick="redirectToPage('katalog.html')">Selengkapnya...</button>

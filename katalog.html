@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="src\icon\favicon.png" type="image/x-icon">
   </head>
   <body>
-    <div class="container-landing-page">
+    <div class="container-catalog">
       <!-- NavBar -->
       <nav class="navbar">
         <div class="navbar-logo"><span>24</span>Wheelz</div>
@@ -18,11 +18,456 @@
           <a href="about.html">TENTANG KAMI</a>
           <a class="active" href="katalog.html">KATALOG</a>
           <a href="wisata.html">DESTINASI WISATA</a>
-          <a href="contact.html">HUBUNGI KAMI</a>
+          <button class="order" onclick="redirectToPage('orderform.html')">Order</button>
         </div>
       </nav>
       <!-- NavBar -->
+      <div class="main-content">
+        <!-- Mobil -->
+        <h2>Motor & Mobil</h2>
+        <h1>Yang Kami Sediakan</h1>
+        <div class="line-1"></div>
+        <p>Untuk memenuhi kebutuhan Perjalanan anda, kami menyediakan Transportasi yang nyaman dengan pelayanan sopir yang ramah.</p>
+
+        <div class="button">
+          <button class="active" id="active" onclick="showPage('mobil', 'motor'); buttonActive('active', 'inactive')">Mobil</button>
+          <button id="inactive" onclick="showPage('motor', 'mobil'); buttonActive('inactive', 'active')">Motor</button>
+        </div>
+        <div class="mobil" id="mobil">
+          <div class="cards">
+            <div class="card">
+              <img src="src/Images/car1.svg" alt="car1">
+              <p class="nama">Avanza</p>
+              <div class="fitur">
+                <img src="src/icon/driver.svg" alt="driver">
+                <p class="driverIcon">Driver</p>
+                <img src="src/icon/carbbm.svg" alt="bbm">
+                <p class="bbmIcon">BBM</p>
+                <img src="src/icon/passanger.svg" alt="passanger">
+                <p class="passanger">7 Penumpang</p>
+              </div>
+              <p class="harga">Rp. 300.000 / Hari</p>
+              <div class="line-price"></div>
+            </div>
+            <div class="card">
+              <img src="src/Images/car1.svg" alt="car1">
+              <p class="nama">Avanza</p>
+              <div class="fitur">
+                <img src="src/icon/driver.svg" alt="driver">
+                <p class="driverIcon">Driver</p>
+                <img src="src/icon/carbbm.svg" alt="bbm">
+                <p class="bbmIcon">BBM</p>
+                <img src="src/icon/passanger.svg" alt="passanger">
+                <p class="passanger">7 Penumpang</p>
+              </div>
+              <p class="harga">Rp. 300.000 / Hari</p>
+              <div class="line-price"></div>
+            </div>
+            <div class="card">
+              <img src="src/Images/car1.svg" alt="car1">
+              <p class="nama">Avanza</p>
+              <div class="fitur">
+                <img src="src/icon/driver.svg" alt="driver">
+                <p class="driverIcon">Driver</p>
+                <img src="src/icon/carbbm.svg" alt="bbm">
+                <p class="bbmIcon">BBM</p>
+                <img src="src/icon/passanger.svg" alt="passanger">
+                <p class="passanger">7 Penumpang</p>
+              </div>
+              <p class="harga">Rp. 300.000 / Hari</p>
+              <div class="line-price"></div>
+            </div>
+            <div class="card">
+              <img src="src/Images/car1.svg" alt="car1">
+              <p class="nama">Avanza</p>
+              <div class="fitur">
+                <img src="src/icon/driver.svg" alt="driver">
+                <p class="driverIcon">Driver</p>
+                <img src="src/icon/carbbm.svg" alt="bbm">
+                <p class="bbmIcon">BBM</p>
+                <img src="src/icon/passanger.svg" alt="passanger">
+                <p class="passanger">7 Penumpang</p>
+              </div>
+              <p class="harga">Rp. 300.000 / Hari</p>
+              <div class="line-price"></div>
+            </div>
+            <div class="card">
+              <img src="src/Images/car1.svg" alt="car1">
+              <p class="nama">Avanza</p>
+              <div class="fitur">
+                <img src="src/icon/driver.svg" alt="driver">
+                <p class="driverIcon">Driver</p>
+                <img src="src/icon/carbbm.svg" alt="bbm">
+                <p class="bbmIcon">BBM</p>
+                <img src="src/icon/passanger.svg" alt="passanger">
+                <p class="passanger">7 Penumpang</p>
+              </div>
+              <p class="harga">Rp. 300.000 / Hari</p>
+              <div class="line-price"></div>
+            </div>
+            <div class="card">
+              <img src="src/Images/car1.svg" alt="car1">
+              <p class="nama">Avanza</p>
+              <div class="fitur">
+                <img src="src/icon/driver.svg" alt="driver">
+                <p class="driverIcon">Driver</p>
+                <img src="src/icon/carbbm.svg" alt="bbm">
+                <p class="bbmIcon">BBM</p>
+                <img src="src/icon/passanger.svg" alt="passanger">
+                <p class="passanger">7 Penumpang</p>
+              </div>
+              <p class="harga">Rp. 300.000 / Hari</p>
+              <div class="line-price"></div>
+            </div>
+            <div class="card">
+              <img src="src/Images/car1.svg" alt="car1">
+              <p class="nama">Avanza</p>
+              <div class="fitur">
+                <img src="src/icon/driver.svg" alt="driver">
+                <p class="driverIcon">Driver</p>
+                <img src="src/icon/carbbm.svg" alt="bbm">
+                <p class="bbmIcon">BBM</p>
+                <img src="src/icon/passanger.svg" alt="passanger">
+                <p class="passanger">7 Penumpang</p>
+              </div>
+              <p class="harga">Rp. 300.000 / Hari</p>
+              <div class="line-price"></div>
+            </div>
+            <div class="card">
+              <img src="src/Images/car1.svg" alt="car1">
+              <p class="nama">Avanza</p>
+              <div class="fitur">
+                <img src="src/icon/driver.svg" alt="driver">
+                <p class="driverIcon">Driver</p>
+                <img src="src/icon/carbbm.svg" alt="bbm">
+                <p class="bbmIcon">BBM</p>
+                <img src="src/icon/passanger.svg" alt="passanger">
+                <p class="passanger">7 Penumpang</p>
+              </div>
+              <p class="harga">Rp. 300.000 / Hari</p>
+              <div class="line-price"></div>
+            </div>
+            <div class="card">
+              <img src="src/Images/car1.svg" alt="car1">
+              <p class="nama">Avanza</p>
+              <div class="fitur">
+                <img src="src/icon/driver.svg" alt="driver">
+                <p class="driverIcon">Driver</p>
+                <img src="src/icon/carbbm.svg" alt="bbm">
+                <p class="bbmIcon">BBM</p>
+                <img src="src/icon/passanger.svg" alt="passanger">
+                <p class="passanger">7 Penumpang</p>
+              </div>
+              <p class="harga">Rp. 300.000 / Hari</p>
+              <div class="line-price"></div>
+            </div>
+            <div class="card">
+              <img src="src/Images/car1.svg" alt="car1">
+              <p class="nama">Avanza</p>
+              <div class="fitur">
+                <img src="src/icon/driver.svg" alt="driver">
+                <p class="driverIcon">Driver</p>
+                <img src="src/icon/carbbm.svg" alt="bbm">
+                <p class="bbmIcon">BBM</p>
+                <img src="src/icon/passanger.svg" alt="passanger">
+                <p class="passanger">7 Penumpang</p>
+              </div>
+              <p class="harga">Rp. 300.000 / Hari</p>
+              <div class="line-price"></div>
+            </div>
+            <div class="card">
+              <img src="src/Images/car1.svg" alt="car1">
+              <p class="nama">Avanza</p>
+              <div class="fitur">
+                <img src="src/icon/driver.svg" alt="driver">
+                <p class="driverIcon">Driver</p>
+                <img src="src/icon/carbbm.svg" alt="bbm">
+                <p class="bbmIcon">BBM</p>
+                <img src="src/icon/passanger.svg" alt="passanger">
+                <p class="passanger">7 Penumpang</p>
+              </div>
+              <p class="harga">Rp. 300.000 / Hari</p>
+              <div class="line-price"></div>
+            </div>
+            <div class="card">
+              <img src="src/Images/car1.svg" alt="car1">
+              <p class="nama">Avanza</p>
+              <div class="fitur">
+                <img src="src/icon/driver.svg" alt="driver">
+                <p class="driverIcon">Driver</p>
+                <img src="src/icon/carbbm.svg" alt="bbm">
+                <p class="bbmIcon">BBM</p>
+                <img src="src/icon/passanger.svg" alt="passanger">
+                <p class="passanger">7 Penumpang</p>
+              </div>
+              <p class="harga">Rp. 300.000 / Hari</p>
+              <div class="line-price"></div>
+            </div>
+            <div class="card">
+              <img src="src/Images/car1.svg" alt="car1">
+              <p class="nama">Avanza</p>
+              <div class="fitur">
+                <img src="src/icon/driver.svg" alt="driver">
+                <p class="driverIcon">Driver</p>
+                <img src="src/icon/carbbm.svg" alt="bbm">
+                <p class="bbmIcon">BBM</p>
+                <img src="src/icon/passanger.svg" alt="passanger">
+                <p class="passanger">7 Penumpang</p>
+              </div>
+              <p class="harga">Rp. 300.000 / Hari</p>
+              <div class="line-price"></div>
+            </div>
+            <div class="card">
+              <img src="src/Images/car1.svg" alt="car1">
+              <p class="nama">Avanza</p>
+              <div class="fitur">
+                <img src="src/icon/driver.svg" alt="driver">
+                <p class="driverIcon">Driver</p>
+                <img src="src/icon/carbbm.svg" alt="bbm">
+                <p class="bbmIcon">BBM</p>
+                <img src="src/icon/passanger.svg" alt="passanger">
+                <p class="passanger">7 Penumpang</p>
+              </div>
+              <p class="harga">Rp. 300.000 / Hari</p>
+              <div class="line-price"></div>
+            </div>
+            <div class="card">
+              <img src="src/Images/car1.svg" alt="car1">
+              <p class="nama">Avanza</p>
+              <div class="fitur">
+                <img src="src/icon/driver.svg" alt="driver">
+                <p class="driverIcon">Driver</p>
+                <img src="src/icon/carbbm.svg" alt="bbm">
+                <p class="bbmIcon">BBM</p>
+                <img src="src/icon/passanger.svg" alt="passanger">
+                <p class="passanger">7 Penumpang</p>
+              </div>
+              <p class="harga">Rp. 300.000 / Hari</p>
+              <div class="line-price"></div>
+            </div>
+            <div class="card">
+              <img src="src/Images/car1.svg" alt="car1">
+              <p class="nama">Avanza</p>
+              <div class="fitur">
+                <img src="src/icon/driver.svg" alt="driver">
+                <p class="driverIcon">Driver</p>
+                <img src="src/icon/carbbm.svg" alt="bbm">
+                <p class="bbmIcon">BBM</p>
+                <img src="src/icon/passanger.svg" alt="passanger">
+                <p class="passanger">7 Penumpang</p>
+              </div>
+              <p class="harga">Rp. 300.000 / Hari</p>
+              <div class="line-price"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Mobil -->
+        <!-- Motor -->
+        <div class="motor" id="motor">
+          <div class="cards">
+            <div class="card">
+              <img src="src/Images/motor1.svg" alt="motor1">
+              <p>Vespa Matic</p>
+              <div class="fitur">
+                <img src="src/icon/helm.svg" alt="driver">
+                <p class="driverIcon">Helmet</p>
+                <img src="src/icon/motorbbm.svg" alt="bbm">
+                <p class="bbmIcon">BBM</p>
+                <img src="src/icon/passanger.svg" alt="passanger">
+                <p class="passanger">1 Penumpang</p>
+              </div>
+              <p class="harga">Rp. 250.000 / Hari</p>
+              <div class="line-price"></div>
+            </div>
+            <div class="card">
+              <img src="src/Images/motor2.svg" alt="motor2">
+              <p>XMAX</p>
+              <div class="fitur">
+                <img src="src/icon/helm.svg" alt="driver">
+                <p class="driverIcon">Helmet</p>
+                <img class="bbmmotor" src="src/icon/motorbbm.svg" alt="bbm">
+                <p class="bbmIcon">BBM</p>
+                <img src="src/icon/passanger.svg" alt="passanger">
+                <p class="passanger">1 Penumpang</p>
+              </div>
+              <p class="harga">Rp. 250.000 / Hari</p>
+              <div class="line-price"></div>
+            </div>
+            <div class="card">
+              <img src="src/Images/motor1.svg" alt="motor1">
+              <p>Vespa Matic</p>
+              <div class="fitur">
+                <img src="src/icon/helm.svg" alt="driver">
+                <p class="driverIcon">Helmet</p>
+                <img src="src/icon/motorbbm.svg" alt="bbm">
+                <p class="bbmIcon">BBM</p>
+                <img src="src/icon/passanger.svg" alt="passanger">
+                <p class="passanger">1 Penumpang</p>
+              </div>
+              <p class="harga">Rp. 250.000 / Hari</p>
+              <div class="line-price"></div>
+            </div>
+            <div class="card">
+              <img src="src/Images/motor2.svg" alt="motor2">
+              <p>XMAX</p>
+              <div class="fitur">
+                <img src="src/icon/helm.svg" alt="driver">
+                <p class="driverIcon">Helmet</p>
+                <img class="bbmmotor" src="src/icon/motorbbm.svg" alt="bbm">
+                <p class="bbmIcon">BBM</p>
+                <img src="src/icon/passanger.svg" alt="passanger">
+                <p class="passanger">1 Penumpang</p>
+              </div>
+              <p class="harga">Rp. 250.000 / Hari</p>
+              <div class="line-price"></div>
+            </div>
+            <div class="card">
+              <img src="src/Images/motor1.svg" alt="motor1">
+              <p>Vespa Matic</p>
+              <div class="fitur">
+                <img src="src/icon/helm.svg" alt="driver">
+                <p class="driverIcon">Helmet</p>
+                <img src="src/icon/motorbbm.svg" alt="bbm">
+                <p class="bbmIcon">BBM</p>
+                <img src="src/icon/passanger.svg" alt="passanger">
+                <p class="passanger">1 Penumpang</p>
+              </div>
+              <p class="harga">Rp. 250.000 / Hari</p>
+              <div class="line-price"></div>
+            </div>
+            <div class="card">
+              <img src="src/Images/motor2.svg" alt="motor2">
+              <p>XMAX</p>
+              <div class="fitur">
+                <img src="src/icon/helm.svg" alt="driver">
+                <p class="driverIcon">Helmet</p>
+                <img class="bbmmotor" src="src/icon/motorbbm.svg" alt="bbm">
+                <p class="bbmIcon">BBM</p>
+                <img src="src/icon/passanger.svg" alt="passanger">
+                <p class="passanger">1 Penumpang</p>
+              </div>
+              <p class="harga">Rp. 250.000 / Hari</p>
+              <div class="line-price"></div>
+            </div>
+            <div class="card">
+              <img src="src/Images/motor1.svg" alt="motor1">
+              <p>Vespa Matic</p>
+              <div class="fitur">
+                <img src="src/icon/helm.svg" alt="driver">
+                <p class="driverIcon">Helmet</p>
+                <img src="src/icon/motorbbm.svg" alt="bbm">
+                <p class="bbmIcon">BBM</p>
+                <img src="src/icon/passanger.svg" alt="passanger">
+                <p class="passanger">1 Penumpang</p>
+              </div>
+              <p class="harga">Rp. 250.000 / Hari</p>
+              <div class="line-price"></div>
+            </div>
+            <div class="card">
+              <img src="src/Images/motor2.svg" alt="motor2">
+              <p>XMAX</p>
+              <div class="fitur">
+                <img src="src/icon/helm.svg" alt="driver">
+                <p class="driverIcon">Helmet</p>
+                <img class="bbmmotor" src="src/icon/motorbbm.svg" alt="bbm">
+                <p class="bbmIcon">BBM</p>
+                <img src="src/icon/passanger.svg" alt="passanger">
+                <p class="passanger">1 Penumpang</p>
+              </div>
+              <p class="harga">Rp. 250.000 / Hari</p>
+              <div class="line-price"></div>
+            </div>
+            <div class="card">
+              <img src="src/Images/motor1.svg" alt="motor1">
+              <p>Vespa Matic</p>
+              <div class="fitur">
+                <img src="src/icon/helm.svg" alt="driver">
+                <p class="driverIcon">Helmet</p>
+                <img src="src/icon/motorbbm.svg" alt="bbm">
+                <p class="bbmIcon">BBM</p>
+                <img src="src/icon/passanger.svg" alt="passanger">
+                <p class="passanger">1 Penumpang</p>
+              </div>
+              <p class="harga">Rp. 250.000 / Hari</p>
+              <div class="line-price"></div>
+            </div>
+            <div class="card">
+              <img src="src/Images/motor2.svg" alt="motor2">
+              <p>XMAX</p>
+              <div class="fitur">
+                <img src="src/icon/helm.svg" alt="driver">
+                <p class="driverIcon">Helmet</p>
+                <img class="bbmmotor" src="src/icon/motorbbm.svg" alt="bbm">
+                <p class="bbmIcon">BBM</p>
+                <img src="src/icon/passanger.svg" alt="passanger">
+                <p class="passanger">1 Penumpang</p>
+              </div>
+              <p class="harga">Rp. 250.000 / Hari</p>
+              <div class="line-price"></div>
+            </div>
+            <div class="card">
+              <img src="src/Images/motor1.svg" alt="motor1">
+              <p>Vespa Matic</p>
+              <div class="fitur">
+                <img src="src/icon/helm.svg" alt="driver">
+                <p class="driverIcon">Helmet</p>
+                <img src="src/icon/motorbbm.svg" alt="bbm">
+                <p class="bbmIcon">BBM</p>
+                <img src="src/icon/passanger.svg" alt="passanger">
+                <p class="passanger">1 Penumpang</p>
+              </div>
+              <p class="harga">Rp. 250.000 / Hari</p>
+              <div class="line-price"></div>
+            </div>
+            <div class="card">
+              <img src="src/Images/motor2.svg" alt="motor2">
+              <p>XMAX</p>
+              <div class="fitur">
+                <img src="src/icon/helm.svg" alt="driver">
+                <p class="driverIcon">Helmet</p>
+                <img class="bbmmotor" src="src/icon/motorbbm.svg" alt="bbm">
+                <p class="bbmIcon">BBM</p>
+                <img src="src/icon/passanger.svg" alt="passanger">
+                <p class="passanger">1 Penumpang</p>
+              </div>
+              <p class="harga">Rp. 250.000 / Hari</p>
+              <div class="line-price"></div>
+            </div>
+            <div class="card">
+              <img src="src/Images/motor1.svg" alt="motor1">
+              <p>Vespa Matic</p>
+              <div class="fitur">
+                <img src="src/icon/helm.svg" alt="driver">
+                <p class="driverIcon">Helmet</p>
+                <img src="src/icon/motorbbm.svg" alt="bbm">
+                <p class="bbmIcon">BBM</p>
+                <img src="src/icon/passanger.svg" alt="passanger">
+                <p class="passanger">1 Penumpang</p>
+              </div>
+              <p class="harga">Rp. 250.000 / Hari</p>
+              <div class="line-price"></div>
+            </div>
+            <div class="card">
+              <img src="src/Images/motor2.svg" alt="motor2">
+              <p>XMAX</p>
+              <div class="fitur">
+                <img src="src/icon/helm.svg" alt="driver">
+                <p class="driverIcon">Helmet</p>
+                <img class="bbmmotor" src="src/icon/motorbbm.svg" alt="bbm">
+                <p class="bbmIcon">BBM</p>
+                <img src="src/icon/passanger.svg" alt="passanger">
+                <p class="passanger">1 Penumpang</p>
+              </div>
+              <p class="harga">Rp. 250.000 / Hari</p>
+              <div class="line-price"></div>
+            </div>
+
+          </div>
+        </div>
+        <!-- Motor -->
+      </div>
     </div>
+
 
     <footer class="footer">
       <p>©2023 <span>24Wheelz.com</span> - Rental Mobil & Motor Yogyakarta. All rights reserved</p>
