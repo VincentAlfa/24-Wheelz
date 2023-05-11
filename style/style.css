@@ -101,6 +101,7 @@ button.order:hover {
 
 .landing-page-slider {
   margin-top: 11vh;
+  height: 23rem;
   display: flex;
   justify-content: space-between;
   padding-inline: 2rem;
@@ -110,25 +111,30 @@ button.order:hover {
 .image-slider {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: relative;
-  scroll-snap-type: x mandatory;
   width: 100%;
   padding: 0.5rem;
 }
 
 .image-slider .slide {
   z-index: 0;
-  scroll-snap-align: start;
 }
 
 .image-slider .slide.active {
+  width: fit-content;
   z-index: 1;
   display: flex;
   justify-content: center;
   position: absolute;
-  right: 0;
-  left: 0;
-  border-radius: 0;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 0.8rem;
+  box-shadow: 0px 0px 25px -5px rgba(0, 0, 0, 0.75);
+}
+
+.image-slider .slide.active img {
+  height: 21rem;
 }
 
 .image-slider img {
