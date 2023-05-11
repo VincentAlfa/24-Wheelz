@@ -4,17 +4,104 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ORDER @$Wheelz</title>
+    <title>ORDER 24Wheelz</title>
     <link rel="stylesheet" href="./style/orderform.css">
     <link rel="shortcut icon" href="src\icon\favicon.png" type="image/x-icon">
   </head>
   <body>
-    <div class="orderform">
-      
+    <div class="main-content">
+      <div class="orderform">
+        <div class="logo"><span>24</span>Wheelz</div>
+        <div class="form-section">
+          <form class="left-side">
+            <input type="text" placeholder="Nama Lengkap">
+            <input type="tel" placeholder="No Telepon">
+            <input type="text" placeholder="Alamat Pengantaran">
+            <div class="selection">
+              <select id="tipe" onchange="vehicleSelection()">
+                <option value="0">Pilih Jenis Kendaraan</option>
+                <option value="1">Motor</option>
+                <option value="2">Mobil Self Drive</option>
+                <option value="3">Mobil Include Driver</option>
+              </select>
+              <select name="mobil" id="mobil-self" class="opt">
+                <option value="Avanza">Avanza</option>
+                <option value="Avanza">Avanza</option>
+                <option value="Avanza">Avanza</option>
+                <option value="Avanza">Avanza</option>
+                <option value="Avanza">Avanza</option>
+              </select>
+              <select name="mobil" id="mobil-driver" class="opt">
+                <option value="BMW">BMW</option>
+                <option value="BMW">BMW</option>
+                <option value="BMW">BMW</option>
+                <option value="BMW">BMW</option>
+                <option value="BMW">BMW</option>
+              </select>
+              <select name="motor" id="motor" class="opt">
+                <option value="vesmet">Vespa Metic</option>
+                <option value="vesmet">Vespa Metic</option>
+                <option value="vesmet">Vespa Metic</option>
+                <option value="vesmet">Vespa Metic</option>
+                <option value="vesmet">Vespa Metic</option>
+                <option value="vesmet">Vespa Metic</option>
+              </select>
+            </div>
+          </form>
+          <form class="right-side">
+            <div class="tanggal">
+              <div class="input">
+                <p>Dari</p>
+                <input type="date" id="dari">
+              </div>
+              <div class="durasi">
+                <p>Durasi</p>
+                <p id="hari">Hari</p>
+              </div>
+              <div class="input">
+                <p>Sampai</p>
+                <input type="date" id="sampai">
+              </div>
+            </div>
+            <div class="jaminan">
+              <p>Jaminan</p>
+              <div class="file-upload">
+                <input type="file">
+                <select id="file">
+                  <option value="ktp">KTP</option>
+                  <option value="kk">Kartu Keluarga</option>
+                  <option value="lain">Lain-Lain</option>
+                </select>
+              </div>
+              <div class="file-upload">
+                <input type="file">
+                <select id="file">
+                  <option value="ktp">KTP</option>
+                  <option value="kk">Kartu Keluarga</option>
+                  <option value="lain">Lain-Lain</option>
+                </select>
+              </div>
+              <div class="file-upload">
+                <input type="file">
+                <select id="file">
+                  <option value="ktp">KTP</option>
+                  <option value="kk">Kartu Keluarga</option>
+                  <option value="lain">Lain-Lain</option>
+                </select>
+              </div>
+            </div>
+            <div class="submit">
+              <input type="submit" id="submit">
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
 
     <footer class="footer">
       <p>©2023 <span>24Wheelz.com</span> - Rental Mobil & Motor Yogyakarta. All rights reserved</p>
     </footer>
+
+    <script src="script/index.js"></script>
   </body>
 </html>

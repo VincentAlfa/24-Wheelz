@@ -10,11 +10,159 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  background-image: url(background/bg-form.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-content {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .orderform {
+  width: 60%;
+  height: 25rem;
+  background-color: #ffffff;
+  box-shadow: 0px 6px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+  margin-left: 20px;
+  margin-top: 10px;
+  font-family: "Monoton", cursive;
+  font-size: 40px;
+}
+
+.logo span {
+  color: #58b7f1;
+}
+
+.opt {
+  display: none;
+}
+
+.orderform .left-side {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  width: 50%;
+  padding: 20px 2px 0 20px;
+}
+
+.orderform .left-side input {
+  margin: 12px 0;
+  padding: 8px;
+}
+
+.orderform .left-side .selection {
+  display: flex;
+  flex-direction: row;
+  margin-top: 16px;
+  gap: 10px;
+}
+
+.orderform .left-side .selection select {
+  padding: 8px;
+}
+
+.orderform .left-side .selection .opt {
+  width: 60%;
+}
+
+.orderform .right-side {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  float: right;
+  width: 50%;
+  margin-top: 10px;
+  padding: 20px 2px 0 20px;
+}
+
+.orderform .right-side .tanggal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.orderform .right-side .input {
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+.orderform .right-side .input p {
   width: 100%;
-  height: 100vh;
+  height: 25px;
+  background-color: #58b7f1;
+  color: #ffffff;
+}
+.orderform .right-side .durasi p {
+  margin-bottom: 10px;
+}
+.orderform .right-side input {
+  width: 110px;
+  height: 60px;
+  border: 0;
+  padding: 8px;
+}
+
+.orderform .right-side .hari {
+  display: flex;
+  flex-direction: column;
+}
+.orderform .right-side #hari {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  width: 50px;
+  height: 25px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.orderform .right-side .jaminan p {
+  margin-top: 10px;
+}
+
+.orderform .right-side .file-upload {
+  margin: 0 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.orderform .right-side .file-upload select {
+  width: 30%;
+  height: fit-content;
+}
+.orderform .right-side .file-upload input {
+  width: 70%;
+  height: fit-content;
+}
+
+#submit {
+  background-color: #58b7f1;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 5px;
+  width: fit-content;
+  height: fit-content;
+  padding: 5px 10px;
+  margin-top: 1rem;
+}
+
+.submit {
+  display: flex;
+  justify-content: right;
+  margin-right: 15px;
 }
 
 .footer {
