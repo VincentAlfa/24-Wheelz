@@ -1,5 +1,7 @@
 const navbar = document.querySelector('.navbar');
 
+const dari =  document.getElementById('dari');
+const sampai = document.getElementById('sampai');
 document.addEventListener('scroll', () =>{
     if(window.scrollY > 0 ){
         navbar.classList.add('scroll')
@@ -56,6 +58,7 @@ function hitungDurasi() {
     document.getElementById('hari').textContent = durasi + ' hari';
   }
   
-  document.getElementById('dari').addEventListener('change', hitungDurasi);
-  document.getElementById('sampai').addEventListener('change', hitungDurasi);
+
+dari.addEventListener('change', hitungDurasi);
+sampai.addEventListener('change', hitungDurasi);
   
