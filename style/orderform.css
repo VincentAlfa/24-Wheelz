@@ -61,8 +61,8 @@ body {
 .orderform .left-side .selection {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin-top: 16px;
-  gap: 10px;
 }
 
 .orderform .left-side .selection select {
@@ -105,9 +105,9 @@ body {
   background-color: #58b7f1;
   color: #ffffff;
 }
-.orderform .right-side input {
+.orderform .right-side .input input {
   border: 0;
-  width: 100%;
+  width: 80%;
 }
 .orderform .right-side .durasi p {
   margin-bottom: 10px;
@@ -168,4 +168,36 @@ body {
   display: flex;
   justify-content: right;
   margin-right: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    font-size: 30px;
+    text-align: center;
+  }
+  .orderform {
+    height: fit-content;
+  }
+  .orderform .left-side,
+  .orderform .right-side {
+    float: none;
+    width: 100%;
+    padding: 0 1rem;
+  }
+  #tipe {
+    width: 50%;
+    flex: left;
+  }
+  .opt {
+    width: 50%;
+    flex: right;
+  }
+  .tanggal {
+    margin-top: 1rem;
+  }
+  .submit {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
 }

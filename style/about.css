@@ -14,7 +14,7 @@ body {
 
 .container-about {
   width: 100%;
-  min-height: 80vh;
+  min-height: 83vh;
   position: relative;
   background-image: url("background/bg.svg");
   background-repeat: no-repeat;
@@ -31,7 +31,8 @@ body {
 }
 
 .about-section .heading {
-  font-size: 35px;
+  text-align: center;
+  font-size: 2rem;
   font-weight: 500;
   color: #000000;
 }
@@ -50,7 +51,7 @@ body {
 .about-section .line-1 {
   position: relative;
   margin: auto;
-  width: 790px;
+  width: 65%;
   height: 4px;
   background-color: #58b7f1;
   margin-top: 1rem;
@@ -61,21 +62,23 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 10rem;
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 500;
-  width: 100%;
+  width: 80%;
   margin-top: 2rem;
 }
 
 .why {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 4rem;
-  margin-left: 10rem;
 }
 
 .why .alasan-container {
   margin-top: 3rem;
   width: 80%;
+  font-size: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -83,9 +86,10 @@ body {
 }
 
 .contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 3rem;
-  margin-left: 10rem;
-  padding-bottom: 3rem;
 }
 
 .contact-container .contact {
@@ -99,5 +103,24 @@ body {
 }
 
 .contact-container .contact img {
-  height: 45px;
+  height: 2.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+  .container-about {
+    background: #ffffff;
+    min-height: 84vh;
+  }
+  p {
+    font-size: 0.7rem;
+  }
+  .contact-container .contact img {
+    height: 2rem;
+  }
+  .socmed h4 {
+    font-size: 0.8rem;
+  }
 }

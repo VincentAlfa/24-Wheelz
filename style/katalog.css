@@ -37,7 +37,7 @@ body {
 .main-content .line-1 {
   position: relative;
   margin: auto;
-  width: 78px;
+  width: 5%;
   height: 4px;
   background-color: #58b7f1;
   margin-top: 10px;
@@ -153,4 +153,13 @@ body {
 
 .motor {
   display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .main-content p {
+    width: 85%;
+  }
+  .main-content .button {
+    width: 60%;
+  }
 }
