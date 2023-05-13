@@ -88,26 +88,29 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  padding: 0 2%;
 }
 
 .orderform .right-side .input {
+  width: 30%;
+  height: 60px;
+  border: 0;
   border: 1px solid #000000;
   border-radius: 5px;
 }
 .orderform .right-side .input p {
+  font-size: 13px;
   width: 100%;
   height: 25px;
   background-color: #58b7f1;
   color: #ffffff;
 }
+.orderform .right-side input {
+  border: 0;
+  width: 100%;
+}
 .orderform .right-side .durasi p {
   margin-bottom: 10px;
-}
-.orderform .right-side input {
-  width: 110px;
-  height: 60px;
-  border: 0;
-  padding: 8px;
 }
 
 .orderform .right-side .hari {
@@ -125,8 +128,8 @@ body {
   border-radius: 5px;
 }
 
-.orderform .right-side .jaminan p {
-  margin-top: 10px;
+.orderform .right-side p.jaminan {
+  margin: 10px 0;
 }
 
 .orderform .right-side .file-upload {
@@ -139,10 +142,12 @@ body {
 }
 
 .orderform .right-side .file-upload select {
+  margin: 8px 0;
   width: 30%;
   height: fit-content;
 }
 .orderform .right-side .file-upload input {
+  margin: 8px 0;
   width: 70%;
   height: fit-content;
 }
@@ -150,7 +155,7 @@ body {
 #submit {
   background-color: #58b7f1;
   color: white;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 500;
   border-radius: 5px;
   width: fit-content;
@@ -163,20 +168,4 @@ body {
   display: flex;
   justify-content: right;
   margin-right: 15px;
-}
-
-.footer {
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 12px;
-  width: 100%;
-  height: 46px;
-  color: #fff;
-  background-color: #656565;
-}
-
-.footer p span {
-  color: #58b7f1;
 }
