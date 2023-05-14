@@ -25,9 +25,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 1rem;
   margin-top: 11vh;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 .about-section .heading {
@@ -72,11 +71,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 .why .alasan-container {
-  margin-top: 3rem;
+  margin-top: 2rem;
   width: 80%;
   font-size: 1rem;
   display: flex;
@@ -89,11 +88,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .contact-container .contact {
-  margin-top: 3rem;
+  margin-top: 2rem;
   width: 80%;
   display: flex;
   justify-content: space-around;

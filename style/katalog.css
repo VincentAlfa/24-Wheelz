@@ -24,7 +24,7 @@ body {
   align-items: center;
   margin-top: 11vh;
   padding-bottom: 3rem;
-  padding-top: 3rem;
+  padding-top: 1rem;
   background-image: url("background/bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -83,8 +83,11 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   padding: 0 5rem;
-  gap: 3rem;
-  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.cards.slide-up {
+  animation: slide-up 1.2s ease;
 }
 
 .main-content .cards .card {
@@ -93,11 +96,7 @@ body {
   flex-direction: column;
   width: 251px;
   height: 346px;
-  background: linear-gradient(
-    153.82deg,
-    #ffffff -21.19%,
-    rgba(208, 208, 208, 0) 111.31%
-  );
+  background: linear-gradient(153.82deg, #ffffff -21.19%, rgba(208, 208, 208, 0) 111.31%);
   filter: drop-shadow(1px 10px 5px rgba(0, 0, 0, 0.25));
   border-radius: 13px;
 }
@@ -153,6 +152,17 @@ body {
 
 .motor {
   display: none;
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(150px);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @media only screen and (max-width: 768px) {

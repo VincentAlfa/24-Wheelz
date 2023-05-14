@@ -2,6 +2,8 @@ const navbar = document.querySelector(".navbar");
 
 const dari = document.getElementById("dari");
 const sampai = document.getElementById("sampai");
+const hari = document.getElementById("hari");
+
 document.addEventListener("scroll", () => {
   if (window.scrollY > 0) {
     navbar.classList.add("scroll");
@@ -50,9 +52,15 @@ function hitungDurasi() {
   var dari = new Date(document.getElementById("dari").value);
   var sampai = new Date(document.getElementById("sampai").value);
 
-  var durasi = Math.abs(sampai.getTime() - dari.getTime()) / (1000 * 3600 * 24);
+  var durasi = Math.floor(sampai.getTime() - dari.getTime()) / (1000 * 3600 * 24);
 
-  document.getElementById("hari").textContent = durasi + " hari";
+  if( durasi >= 0 ){
+    hari.textContent = durasi + " hari";
+  }
+  if(durasi < 0 ){
+    hari.textContent =" Durasi Invalid";
+  }
+
 }
 
 dari.addEventListener("change", hitungDurasi);
