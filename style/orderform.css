@@ -63,6 +63,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 16px;
+  gap: 10px;
 }
 
 .orderform .left-side .selection select {
@@ -139,6 +140,13 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 5px;
+}
+
+#dari {
+  width: 100px;
+}
+#sampai {
+  width: 100px;
 }
 
 .orderform .right-side .file-upload select {
