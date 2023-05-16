@@ -14,10 +14,13 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+a{
+  text-decoration: none;
+  color: #000000;
+}
 .main-content {
   width: 100%;
-  min-height: 100vh;
+  min-height: 94vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -142,11 +145,8 @@ body {
   gap: 5px;
 }
 
-#dari {
-  width: 100px;
-}
-#sampai {
-  width: 100px;
+#dari, #sampai {
+  width: 5rem;
 }
 
 .orderform .right-side .file-upload select {
@@ -186,19 +186,21 @@ body {
   .orderform {
     height: fit-content;
   }
+
   .orderform .left-side,
   .orderform .right-side {
     float: none;
     width: 100%;
     padding: 0 1rem;
   }
-  #tipe {
-    width: 50%;
-    flex: left;
+  .orderform .left-side .selection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
   }
-  .opt {
-    width: 50%;
-    flex: right;
+  .orderform .left-side .selection .opt {
+    width: 100%;
   }
   .tanggal {
     margin-top: 1rem;
