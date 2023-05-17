@@ -19,7 +19,6 @@ const redirectToPage = (link) => {
 function showPage(shown, hidden) {
   document.getElementById(shown).style.display = "block";
   document.getElementById(hidden).style.display = "none";
-  return false;
 }
 
 function buttonActive(active, inactive) {

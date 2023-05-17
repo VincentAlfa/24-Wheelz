@@ -10,9 +10,6 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-}
-
-.container-catalog {
   width: 100%;
   min-height: 100vh;
 }
@@ -84,7 +81,23 @@ body {
   justify-content: center;
   padding: 0 5rem;
   gap: 2rem;
+  margin-bottom: 4rem;
   animation: slide-up 1.2s ease;
+}
+
+#mobil h2 {
+  color: #000000;
+  text-align: center;
+  margin-top: 1rem;
+}
+#mobil .line-3 {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  width: 10%;
+  height: 4px;
+  background-color: #58b7f1;
+  margin-bottom: 2rem;
 }
 
 .main-content .cards .card {
@@ -93,7 +106,11 @@ body {
   flex-direction: column;
   width: 251px;
   height: 346px;
-  background: linear-gradient(153.82deg, #ffffff -21.19%, rgba(208, 208, 208, 0) 111.31%);
+  background: linear-gradient(
+    153.82deg,
+    #ffffff -21.19%,
+    rgba(208, 208, 208, 0) 111.31%
+  );
   filter: drop-shadow(1px 10px 5px rgba(0, 0, 0, 0.25));
   border-radius: 13px;
 }
@@ -113,7 +130,8 @@ body {
 .main-content .cards .card .fitur {
   display: flex;
   align-items: center;
-  gap: 5px;
+  justify-content: center;
+  gap: 0.4rem;
   width: 90%;
   margin-top: 1rem;
   padding: 0 5px;
@@ -128,10 +146,7 @@ body {
   margin-top: 0;
   font-size: 10px;
   font-weight: 400;
-}
-
-.main-content .cards .card .fitur p.passanger {
-  width: 200px;
+  width: fit-content;
 }
 
 .main-content .cards .card .harga {
@@ -147,7 +162,7 @@ body {
   margin-top: 5px;
 }
 
-.motor {
+#motor {
   display: none;
 }
 

@@ -10,16 +10,12 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-}
-
-.container-landing-page {
   width: 100%;
   min-height: 100vh;
-  position: relative;
 }
 
 .landing-page-slider {
-  margin-top: 11vh;
+  margin-top: 8vh;
   height: 23rem;
   display: flex;
   justify-content: space-between;
@@ -286,5 +282,4 @@ body {
     padding-inline: 2rem;
     background-color: #e1e1e1;
   }
-
 }
