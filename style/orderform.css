@@ -14,7 +14,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-a{
+a {
   text-decoration: none;
   color: #000000;
 }
@@ -117,10 +117,6 @@ a{
   margin-bottom: 10px;
 }
 
-.orderform .right-side .hari {
-  display: flex;
-  flex-direction: column;
-}
 .orderform .right-side #hari {
   display: flex;
   justify-content: center;
@@ -145,8 +141,9 @@ a{
   gap: 5px;
 }
 
-#dari, #sampai {
-  width: 6.5rem;
+#dari,
+#sampai {
+  width: 95%;
 }
 
 .orderform .right-side .file-upload select {
@@ -204,6 +201,8 @@ a{
   }
   .tanggal {
     margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
   }
   .submit {
     display: flex;
