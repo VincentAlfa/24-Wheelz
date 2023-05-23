@@ -18,6 +18,9 @@ main {
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
+  background-image: url("background/bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 main h2 {
   margin-top: 2rem;
