@@ -16,19 +16,19 @@
           <a href="index.html"><span>24</span>Wheelz</a>
         </div>
         <div class="form-section">
-          <form action="/Database/process.php" method="post">
+          <form action="/Database/process.php" method="post" enctype="multipart/form-data">
             <div class="left-side">
               <input type="text" placeholder="Nama Lengkap" name="Nama_Lengkap" />
               <input type="number" placeholder="No Telepon" name="No_Telepon" />
               <input type="text" placeholder="Alamat Pengantaran" name="Alamat"/>
               <div class="selection">
-                <select id="tipe" onchange="vehicleSelection()">
+                <select name="tipe" id="tipe" onchange="vehicleSelection()">
                   <option value="0">Pilih Jenis Kendaraan</option>
                   <option value="motor">Motor</option>
                   <option value="mobil self drive">Mobil Self Drive</option>
-                  <option value="mobil include drive">Mobil Include Driver</option>
+                  <option value="mobil include driver">Mobil Include Driver</option>
                 </select>
-                <select name="mobil" id="mobil-driver" class="opt">
+                <select name="mobild" id="mobil-driver" class="opt">
                   <option value="Avanza">Avanza</option>
                   <option value="Innova Reborn">Innova Reborn</option>
                   <option value="Innova Grand">Innova Grand</option>
@@ -38,7 +38,7 @@
                   <option value="Honda Brio">Honda Brio</option>
                   <option value="Honda Jazz">Honda Jazz</option>
                 </select>
-                <select name="mobil" id="mobil-self" class="opt">
+                <select name="mobils" id="mobil-self" class="opt">
                   <option value="All New Avanza Veloz">All New Avanza Veloz</option>
                   <option value="Honda Jazz">Honda Jazz</option>
                   <option value="Honda Brio">Honda Brio</option>
@@ -85,28 +85,16 @@
               </div>
               <p class="jaminan">Jaminan</p>
               <div class="file-upload">
-                <input type="file" />
-                <select id="file">
-                  <option value="ktp">KTP</option>
-                  <option value="kk">Kartu Keluarga</option>
-                  <option value="lain">Lain-Lain</option>
-                </select>
+                <input type="file" name="ktp"/>
+                <p>KTP</p>
               </div>
               <div class="file-upload">
-                <input type="file" />
-                <select id="file">
-                  <option value="ktp">KTP</option>
-                  <option value="kk">Kartu Keluarga</option>
-                  <option value="lain">Lain-Lain</option>
-                </select>
+                <input type="file" name="jaminan2"/>
+                <p>Jaminan 2</p>
               </div>
               <div class="file-upload">
-                <input type="file" />
-                <select id="file">
-                  <option value="ktp">KTP</option>
-                  <option value="kk">Kartu Keluarga</option>
-                  <option value="lain">Lain-Lain</option>
-                </select>
+                <input type="file" name="jaminan3"/>
+                <p>Jaminan 3</p>
               </div>
               <div class="submit">
                 <input type="submit" id="submit" />

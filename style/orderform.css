@@ -175,6 +175,10 @@ a {
   margin-right: 15px;
 }
 
+.file-upload p {
+  font-weight: 500;
+}
+
 @media only screen and (max-width: 768px) {
   .logo {
     font-size: 30px;

@@ -42,7 +42,7 @@ function vehicleSelection() {
   if (tipe === "mobil self drive") {
     mobilSelfDrive.display = "block";
   }
-  if (tipe === "mobil include drive") {
+  if (tipe === "mobil include driver") {
     mobilDriven.display = "block";
   }
 }
@@ -51,15 +51,15 @@ function hitungDurasi() {
   var dari = new Date(document.getElementById("dari").value);
   var sampai = new Date(document.getElementById("sampai").value);
 
-  var durasi = Math.floor(sampai.getTime() - dari.getTime()) / (1000 * 3600 * 24);
+  var durasi =
+    Math.floor(sampai.getTime() - dari.getTime()) / (1000 * 3600 * 24);
 
-  if( durasi >= 0 ){
+  if (durasi >= 0) {
     hari.textContent = durasi + " hari";
   }
-  if(durasi < 0 ){
-    hari.textContent =" Durasi Invalid";
+  if (durasi < 0) {
+    hari.textContent = " Durasi Invalid";
   }
-
 }
 
 dari.addEventListener("change", hitungDurasi);
