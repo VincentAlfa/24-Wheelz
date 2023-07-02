@@ -8,6 +8,8 @@ $mobild = $_POST["mobild"];
 $mobils = $_POST["mobils"];
 $motor = $_POST["motor"];
 $tipe = $_POST["tipe"];
+$mulaiSewa = $_POST["mulai"];
+$selesaiSewa = $_POST["sampai"];
 $direktori = "../fileupload/";
 $pilihan = "";
 
@@ -35,14 +37,14 @@ $filejaminan3Name = $_FILES['jaminan3']['name'];
 
 move_uploaded_file($filektpTemp,$direktori.$filektpName);
 move_uploaded_file($filejaminan2Temp,$direktori.$filejaminan2Name);
-move_uploaded_file($filejaminan2Temp,$direktori.$filejaminan3Name);
+move_uploaded_file($filejaminan3Temp,$direktori.$filejaminan3Name);
 
 
 echo "Nama Anda: $name<br>";
 echo "Nomor Anda: $number<br>";
 echo "Alamat Pengantaran: $alamat<br>";
 
-$sql = "INSERT INTO `form-order` (Nama_Lengkap, No_Telepon, Alamat, jenis_kendaraan) VALUES ('$name','$number','$alamat','$pilihan')";
+$sql = "INSERT INTO `form-order` (Nama_Lengkap, No_Telepon, Alamat, jenis_kendaraan, tanggal_mulaisewa, tanggal_selesaisewa) VALUES ('$name','$number','$alamat','$pilihan','$mulaiSewa', '$selesaiSewa')";
 
 if (mysqli_query($connection, $sql)) {
   echo "Data inserted successfully!";
