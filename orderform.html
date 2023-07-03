@@ -18,9 +18,9 @@
         <div class="form-section">
           <form action="/Database/process.php" method="post" enctype="multipart/form-data">
             <div class="left-side">
-              <input type="text" placeholder="Nama Lengkap" name="Nama_Lengkap" required/>
-              <input type="number" placeholder="No Telepon" name="No_Telepon" required/>
-              <input type="text" placeholder="Alamat Pengantaran" name="Alamat" required/>
+              <input type="text" placeholder="Nama Lengkap" name="Nama_Lengkap" autocomplete="off" required/>
+              <input type="number" placeholder="No Telepon" name="No_Telepon" autocomplete="off" required/>
+              <input type="text" placeholder="Alamat Pengantaran" name="Alamat" autocomplete="off" required/>
               <div class="selection">
                 <select name="tipe" id="tipe" onchange="vehicleSelection()">
                   <option value="0">Pilih Jenis Kendaraan</option>
