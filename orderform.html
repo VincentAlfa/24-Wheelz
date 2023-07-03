@@ -18,9 +18,9 @@
         <div class="form-section">
           <form action="/Database/process.php" method="post" enctype="multipart/form-data">
             <div class="left-side">
-              <input type="text" placeholder="Nama Lengkap" name="Nama_Lengkap" />
-              <input type="number" placeholder="No Telepon" name="No_Telepon" />
-              <input type="text" placeholder="Alamat Pengantaran" name="Alamat"/>
+              <input type="text" placeholder="Nama Lengkap" name="Nama_Lengkap" required/>
+              <input type="number" placeholder="No Telepon" name="No_Telepon" required/>
+              <input type="text" placeholder="Alamat Pengantaran" name="Alamat" required/>
               <div class="selection">
                 <select name="tipe" id="tipe" onchange="vehicleSelection()">
                   <option value="0">Pilih Jenis Kendaraan</option>
@@ -72,7 +72,7 @@
               <div class="tanggal">
                 <div class="input">
                   <p>Dari</p>
-                  <input type="date" id="dari" name="mulai"/>
+                  <input type="date" id="dari" name="mulai" required/>
                 </div>
                 <div class="durasi">
                   <p>Durasi</p>
@@ -80,12 +80,12 @@
                 </div>
                 <div class="input">
                   <p>Sampai</p>
-                  <input type="date" id="sampai" name="sampai"/>
+                  <input type="date" id="sampai" name="sampai" required/>
                 </div>
               </div>
               <p class="jaminan">Jaminan</p>
               <div class="file-upload">
-                <input type="file" name="ktp"/>
+                <input type="file" name="ktp" required/>
                 <p>KTP</p>
               </div>
               <div class="file-upload">
