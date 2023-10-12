@@ -12,10 +12,6 @@ document.addEventListener("scroll", () => {
   }
 });
 
-const redirectToPage = (link) => {
-  window.location.href = link;
-};
-
 function showPage(shown, hidden) {
   document.getElementById(shown).style.display = "block";
   document.getElementById(hidden).style.display = "none";
